@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Pool Table - Mokel Cue Club Investments</title>
+  <meta name="description" content="Discover the Elite Pool Table by Mokel Cue Club Investments. Perfect for players who demand the best in quality and performance.">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button onclick="increaseFontSize()" aria-label="Increase Text Size">A+</button>
+    <button onclick="resetFontSize()" aria-label="Reset Text Size">A-</button>
+    <button onclick="toggleHighContrast()" aria-label="Toggle High Contrast">☀️/🌙</button>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <img src="images/logo3.png" alt="Mokel Cue Club Investments" id="logo">
+      <div class="title-motto">
+        <h1 id="title">Mokel Cue Club Investments</h1>
+        <p id="motto">Your Ultimate Pool Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping cart.html">Cart (0)</a>
+    <a href="mantainenance.html">Game and Care</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div style="margin: 20px;">
+      <button onclick="history.back()" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr; Back</button>
+    </div>
+    
+    <!-- Product Details Section -->
+    <section id="product-details">
+      <div class="product-grid">
+        <!-- Product Image -->
+        <div class="product-image">
+          <img src="images/elite1.jpeg" alt="Elite Pool Table">
+        </div>
+        <!-- Product Info -->
+        <div class="product-info">
+          <h2>Elite Championship Pool Table</h2>
+          <p class="product-description">
+            The <strong>Elite Championship Pool Table</strong> by Mokel Cue Club Investments is designed for serious players who demand tournament-level performance. Crafted with premium materials and expert craftsmanship, this table offers unparalleled playability and luxury.
+          </p>
+          <div class="product-specs">
+            <h3>Specifications</h3>
+            <ul>
+              <li><strong>Dimensions:</strong> 9 ft x 4.5 ft (Tournament Size)</li>
+              <li><strong>Material:</strong> Solid mahogany frame, 1" Italian slate bed, Simonis tournament cloth</li>
+              <li><strong>Weight:</strong> 550 kg</li>
+              <li><strong>Features:</strong> Adjustable leg levelers, Artemis rubber cushions, leather drop pockets</li>
+            </ul>
+          </div>
+          <div class="product-price">
+            <p><strong>Price:</strong> P29,999.99</p>
+            <button onclick="addToCart('elite-table-1', 'Elite Championship Pool Table', 29999.99, 'images/elite1.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section id="related-products">
+      <h3>Other Elite Pool Tables</h3>
+      <div class="related-products-grid">
+        <div class="related-product">
+          <img src="images/elite2.jpeg" alt="Elite Tournament Table">
+          <button onclick="addToCart('elite-table-2', 'Elite Tournament Table', 34999.99, 'images/elite2.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="related-product">
+          <img src="images/elite3.jpeg" alt="Elite Professional Table">
+          <button onclick="addToCart('elite-table-3', 'Elite Professional Table', 31999.99, 'images/elite3.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="related-product">
+          <img src="images/elite4.jpeg" alt="Elite Classic Table">
+          <button onclick="addT oCart('elite-table-4', 'Elite Classic Table', 27999.99, 'images/elite4.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="customer-reviews">
+      <h3>Customer Reviews</h3>
+      <div class="reviews-content">
+        <div class="review">
+          <p><strong>James P.</strong> - <em>"The Elite table plays better than the ones at the world championships. Worth every peso!"</em></p>
+        </div>
+        <div class="review">
+          <p><strong>Maria S.</strong> - <em>"Absolutely stunning craftsmanship. The ball roll is perfect and consistent across the entire surface."</em></p>
+        </div>
+        <div class="review">
+          <p><strong>Carlos M.</strong> - <em>"I've owned many tables, but none compare to this Elite model. The attention to detail is remarkable."</em></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2023 Mokel Cue Club Investments. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

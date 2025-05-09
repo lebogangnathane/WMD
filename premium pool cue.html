@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Pool Table - Mokel Cue Club Investments</title>
+  <meta name="description" content="Discover the Premium Pool Table by Mokel Cue Club Investments. Exceptional quality for serious players at an accessible price point.">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button onclick="increaseFontSize()" aria-label="Increase Text Size">A+</button>
+    <button onclick="resetFontSize()" aria-label="Reset Text Size">A-</button>
+    <button onclick="toggleHighContrast()" aria-label="Toggle High Contrast">☀️/🌙</button>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <img src="images/logo3.png" alt="Mokel Cue Club Investments" id="logo">
+      <div class="title-motto">
+        <h1 id="title">Mokel Cue Club Investments</h1>
+        <p id="motto">Your Ultimate Pool Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping cart.html">Cart (0)</a>
+    <a href="mantainenance.html">Game and Care</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div style="margin: 20px;">
+      <button onclick="history.back()" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr; Back</button>
+    </div>
+    
+    <!-- Product Details Section -->
+    <section id="product-details">
+      <div class="product-grid">
+        <!-- Product Image -->
+        <div class="product-image">
+          <img src="images/premium1.webp" alt="Premium Pool Table">
+        </div>
+        <!-- Product Info -->
+        <div class="product-info">
+          <h2>Premium Performance Pool Table</h2>
+          <p class="product-description">
+            The <strong>Premium Performance Pool Table</strong> by Mokel Cue Club Investments offers exceptional playability at an accessible price point. Perfect for home game rooms and serious recreational players.
+          </p>
+          <div class="product-specs">
+            <h3>Specifications</h3>
+            <ul>
+              <li><strong>Dimensions:</strong> 8 ft x 4 ft (Standard Size)</li>
+              <li><strong>Material:</strong> Solid oak frame, 3/4" slate bed, premium wool blend cloth</li>
+              <li><strong>Weight:</strong> 400 kg</li>
+              <li><strong>Features:</strong> Adjustable legs, high-performance rubber cushions, durable construction</li>
+            </ul>
+          </div>
+          <div class="product-price">
+            <p><strong>Price:</strong> P22,999.99</p>
+            <button onclick="addToCart('premium-table-1', 'Premium Performance Pool Table', 22999.99, 'images/premium1.webp')" class="cta-button add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section id="related-products">
+      <h3>Other Premium Pool Tables</h3>
+      <div class="related-products-grid">
+        <div class="related-product">
+          <img src="images/premium4.jpeg" alt="Premium Classic Table">
+          <button onclick="addToCart('premium-table-2', 'Premium Classic Table', 19999.99, 'images/premium4.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="related-product">
+          <img src="images/premium5.jpeg" alt="Premium Tournament Table">
+          <button onclick="addToCart('premium-table-3', 'Premium Tournament Table', 24999.99, 'images/premium5.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="related-product">
+          <img src="images/premium6.jpeg" alt="Premium Home Table">
+          <button onclick="addToCart('premium-table-4', 'Premium Home Table', 18999.99, 'images/premium6.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="customer-reviews">
+      <h3>Customer Reviews</h3>
+      <div class="reviews-content">
+        <div class="review">
+          <p><strong>Robert T.</strong> - <em>"Perfect balance of quality and value. Plays like tables costing twice as much."</em></p>
+        </div>
+        <div class="review">
+          <p><strong>Lisa M.</strong> - <em>"The Premium table has transformed our game nights. Excellent ball response and consistent play."</em></p>
+        </div>
+        <div class="review">
+          <p><strong>Daniel K.</strong> - <em>"Exceptional craftsmanship at this price point. Highly recommend for serious players."</em></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2023 Mokel Cue Club Investments. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

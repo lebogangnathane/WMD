@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories - Mokel Cue Club Investments</title>
+  <meta name="description" content="Shop premium pool accessories at Elicite Cues. From triangles to chalks, we have everything you need for your ultimate pool experience.">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button onclick="increaseFontSize()" aria-label="Increase Text Size">A+</button>
+    <button onclick="resetFontSize()" aria-label="Reset Text Size">A-</button>
+    <button onclick="toggleHighContrast()" aria-label="Toggle High Contrast">☀️/🌙</button>
+  </div>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <img src="images/logo3.png" alt="Mokel Cue Club Investments" id="logo">
+      <div class="title-motto">
+        <h1 id="title">Mokel Cue Club Investments</h1>
+        <p id="motto">Your Ultimate Pool Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping cart.html">Cart (0)</a>
+    <a href="mantainenance.html">Game and Care</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div style="margin: 20px;">
+      <button onclick="history.back()" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr; Back</button>
+    </div>
+    
+    <!-- Triangles Section -->
+    <section id="triangles">
+      <h2>Triangles</h2>
+      <p class="section-description">Used for racking balls at the start of a game. Our triangles are durable and designed for precision.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/triangle1.jpg" alt="Triangle 1">
+          <h3>Standard Triangle</h3>
+          <p>P199.99</p>
+          <button onclick="addToCart('triangle-1', 'Standard Triangle', 199.99, 'images/triangle1.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/triangle2.jpg" alt="Triangle 2">
+          <h3>Premium Triangle</h3>
+          <p>P249.99</p>
+          <button onclick="addToCart('triangle-2', 'Premium Triangle', 249.99, 'images/triangle2.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/triangle3.jpg" alt="Triangle 3">
+          <h3>Tournament Triangle</h3>
+          <p>P299.99</p>
+          <button onclick="addToCart('triangle-3', 'Tournament Triangle', 299.99, 'images/triangle3.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/triangle4.jpg" alt="Triangle 4">
+          <h3>Elite Triangle</h3>
+          <p>P349.99</p>
+          <button onclick="addToCart('triangle-4', 'Elite Triangle', 349.99, 'images/triangle4.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Balls Section -->
+    <section id="balls">
+      <h2>Balls</h2>
+      <p class="section-description">High-quality pool balls designed for professional gameplay. Perfect for tournaments or casual play.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/ball1.jpeg" alt="Balls Set 1">
+          <h3>Standard Ball Set</h3>
+          <p>P999.99</p>
+          <button onclick="addToCart('balls-1', 'Standard Ball Set', 999.99, 'images/ball1.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/ball2.jpeg" alt="Balls Set 2">
+          <h3>Premium Ball Set</h3>
+          <p>P1,199.99</p>
+          <button onclick="addToCart('balls-2', 'Premium Ball Set', 1199.99, 'images/ball2.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/ball3.jpeg" alt="Balls Set 3">
+          <h3>Tournament Ball Set</h3>
+          <p>P1,499.99</p>
+          <button onclick="addToCart('balls-3', 'Tournament Ball Set', 1499.99, 'images/ball3.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chalks Section -->
+    <section id="chalks">
+      <h2>Chalks</h2>
+      <p class="section-description">Essential for maintaining cue tip grip and preventing miscues. Our chalks are long-lasting and easy to apply.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/chalk1.jpg" alt="Chalk 1">
+          <h3>Standard Chalk</h3>
+          <p>P49.99</p>
+          <button onclick="addToCart('chalk-1', 'Standard Chalk', 49.99, 'images/chalk1.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/chalk2.jpg" alt="Chalk 2">
+          <h3>Premium Chalk</h3>
+          <p>P59.99</p>
+          <button onclick="addToCart('chalk-2', 'Premium Chalk', 59.99, 'images/chalk2.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/chalk3.jpg" alt="Chalk 3">
+          <h3>Tournament Chalk</h3>
+          <p>P69.99</p>
+          <button onclick="addToCart('chalk-3', 'Tournament Chalk', 69.99, 'images/chalk3.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticks Section -->
+    <section id="sticks">
+      <h2>Sticks</h2>
+      <p class="section-description">High-performance pool sticks designed for precision and control. Perfect for players of all levels.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/vanlan stick.jpeg" alt="Stick 1">
+          <h3>Vanlan Pool Stick</h3>
+          <p>P1,499.99</p>
+          <button onclick="addToCart('stick-1', 'Vanlan Pool Stick', 1499.99, 'images/vanlan stick.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/viper coloured 2pc stick.jpeg" alt="Stick 2">
+          <h3>Viper Colored 2PC Stick</h3>
+          <p>P1,699.99</p>
+          <button onclick="addToCart('stick-2', 'Viper Colored 2PC Stick', 1699.99, 'images/viper coloured 2pc stick.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/stick3.jpg" alt="Stick 3">
+          <h3>Premium Pool Stick</h3>
+          <p>P1,899.99</p>
+          <button onclick="addToCart('stick-3', 'Premium Pool Stick', 1899.99, 'images/stick3.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/stick4.jpg" alt="Stick 4">
+          <h3>Elite Pool Stick</h3>
+          <p>P2,099.99</p>
+          <button onclick="addToCart('stick-4', 'Elite Pool Stick', 2099.99, 'images/stick4.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/stick5.jpg" alt="Stick 5">
+          <h3>Tournament Pool Stick</h3>
+          <p>P2,299.99</p>
+          <button onclick="addToCart('stick-5', 'Tournament Pool Stick', 2299.99, 'images/stick5.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips">
+      <h2>Tips</h2>
+      <p class="section-description">Replaceable cue tips for maintaining optimal performance. Our tips are durable and provide excellent grip.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/tip4.jpg" alt="Tip 1">
+          <h3>Standard Tip</h3>
+          <p>P99.99</p>
+          <button onclick="addToCart('tip-1', 'Standard Tip', 99.99, 'images/tip4.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/tip2.jpg" alt="Tip 2">
+          <h3>Premium Tip</h3>
+          <p>P129.99</p>
+          <button onclick="addToCart('tip-2', 'Premium Tip', 129.99, 'images/tip2.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/tip7.jpg" alt="Tip 3">
+          <h3>Elite Tip</h3>
+          <p>P149.99</p>
+          <button onclick="addToCart('tip-3', 'Elite Tip', 149.99, 'images/tip7.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/tip5.jpg" alt="Tip 4">
+          <h3>Tournament Tip</h3>
+          <p>P169.99</p>
+          <button onclick="addToCart('tip-4', 'Tournament Tip', 169.99, 'images/tip5.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2023 Mokel Cue Club Investments. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

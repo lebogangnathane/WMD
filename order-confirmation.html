@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation - Mokel Cue Club Investments</title>
+  <meta name="description" content="Your order has been confirmed at Mokel Cue Club Investments. Thank you for your purchase!">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button onclick="increaseFontSize()" aria-label="Increase Text Size">A+</button>
+    <button onclick="resetFontSize()" aria-label="Reset Text Size">A-</button>
+    <button onclick="toggleHighContrast()" aria-label="Toggle High Contrast">☀️/🌙</button>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <img src="images/logo3.png" alt="Mokel Cue Club Investments" id="logo">
+      <div class="title-motto">
+        <h1 id="title">Mokel Cue Club Investments</h1>
+        <p id="motto">Your Ultimate Pool Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping cart.html">Cart (0)</a>
+    <a href="mantainenance.html">Game and Care</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container py-5">
+    <div class="confirmation-card">
+      <div class="success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      
+      <h2 class="text-center mb-4">Order Confirmed!</h2>
+      <p class="text-center mb-4">Thank you for your purchase. Your order has been successfully placed.</p>
+      
+      <div class="order-details">
+        <h3>Order Details</h3>
+        <div id="order-items" class="mb-4">
+          <!-- Order items will be populated by JavaScript -->
+        </div>
+        
+        <div class="summary-totals">
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span id="subtotal">BWP 0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping:</span>
+            <span>BWP 500.00</span>
+          </div>
+          <div class="summary-row total">
+            <span><strong>Total:</strong></span>
+            <span id="total"><strong>BWP 0.00</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="confirmation-actions text-center mt-4">
+        <a href="shop.html" class="btn btn-primary me-2">Continue Shopping</a>
+        <a href="index.html" class="btn btn-outline-primary">Return to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2023 Mokel Cue Club Investments. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    // Display order details on confirmation page
+    function displayOrderConfirmation() {
+      const orderItemsContainer = document.getElementById('order-items');
+      const subtotalElement = document.getElementById('subtotal');
+      const totalElement = document.getElementById('total');
+      
+      if (!orderItemsContainer || !subtotalElement || !totalElement) return;
+
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart.length === 0) {
+        window.location.href = 'index.html';
+        return;
+      }
+
+      // Display order items
+      orderItemsContainer.innerHTML = cart.map(item => `
+        <div class="order-item">
+          <span>${item.name} × ${item.quantity}</span>
+          <span>BWP ${(item.price * item.quantity).toFixed(2)}</span>
+        </div>
+      `).join('');
+
+      // Calculate totals
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const shipping = 500;
+      const total = subtotal + shipping;
+
+      // Update summary
+      subtotalElement.textContent = `BWP ${subtotal.toFixed(2)}`;
+      totalElement.textContent = `BWP ${total.toFixed(2)}`;
+    }
+
+    // Initialize confirmation page
+    document.addEventListener('DOMContentLoaded', () => {
+      displayOrderConfirmation();
+    });
+  </script>
+  
+</body>
+</html> 

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game and Care - Mokel Cue Club Investments</title>
+  <meta name="description" content="Premium maintenance products for your pool equipment at Mokel Cue Club Investments. Keep your cues and accessories in top condition.">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <style>
+    /* Added styles for the new elements */
+    .maintenance-tip {
+      background-color: #f8f9fa;
+      border-left: 4px solid #333;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    
+    .maintenance-tip h3 {
+      color: #333;
+      margin-top: 0;
+    }
+    
+    .bundle-card {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .bundle-card h3 {
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    
+    .bundle-price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #28a745;
+    }
+    
+    .bundle-button {
+      background-color: #28a745;
+      margin-top: 15px;
+    }
+    
+    .bundle-button:hover {
+      background-color: #218838;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button onclick="increaseFontSize()" aria-label="Increase Text Size">A+</button>
+    <button onclick="resetFontSize()" aria-label="Reset Text Size">A-</button>
+    <button onclick="toggleHighContrast()" aria-label="Toggle High Contrast">☀️/🌙</button>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <img src="images/logo3.png" alt="Mokel Cue Club Investments" id="logo">
+      <div class="title-motto">
+        <h1 id="title">Mokel Cue Club Investments</h1>
+        <p id="motto">Your Ultimate Pool Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping cart.html">Cart (0)</a>
+    <a href="mantainenance.html">Game and Care</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div style="margin: 20px;">
+      <button onclick="history.back()" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">&larr; Back</button>
+    </div>
+    
+    <section class="intro-section">
+      <h1>Game and Care Products</h1>
+      <p class="section-description">Keep your pool equipment in pristine condition with our premium maintenance products. From table cloths to precision tools, we have everything you need to maintain your gear for optimal performance.</p>
+      
+      <!-- Added a nice maintenance tip box -->
+      <div class="maintenance-tip">
+        <h3><i class="bi bi-lightbulb"></i> Pro Tip</h3>
+        <p>Regular maintenance extends the life of your equipment and improves gameplay. Clean your table weekly and condition your cue tips monthly for best results.</p>
+      </div>
+    </section>
+
+    <!-- Table Cloths Section -->
+    <section id="table-cloths">
+      <h2>Premium Table Cloths</h2>
+      <p class="section-description">High-quality cloths for smooth and consistent ball roll.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/speed cloth.jpg" alt="Standard Table Cloth">
+          <h3>Speed Cloth</h3>
+          <p>P2,499.99</p>
+          <button onclick="addToCart('cloth-1', 'Tournament Blue Cloth', 2499.99, 'images/speed cloth.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/billard table cloth.jpg" alt="Premium Table Cloth">
+          <h3>Billards Cloth</h3>
+          <p>P2,999.99</p>
+          <button onclick="addToCart('cloth-2', 'Championship Green Cloth', 2999.99, 'images/billard table cloth.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintenance Tools Section -->
+    <section id="maintenance-tools">
+      <h2>Essential Maintenance Tools</h2>
+      <p class="section-description">Professional tools to keep your equipment in top condition.</p>
+      <div class="accessories-grid">
+        <div class="accessory">
+          <img src="images/microfibre cloth.jpg" alt="Microfiber Cloth">
+          <h3>Premium Microfiber Cloth</h3>
+          <p>P199.99</p>
+          <button onclick="addToCart('micro-1', 'Premium Microfiber Cloth', 199.99, 'images/microfiber cloth.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/precission leveling tool.jpeg" alt="Precision Tool">
+          <h3>Multi-Purpose Precision Tool</h3>
+          <p>P349.99</p>
+          <button onclick="addToCart('tool-1', 'Multi-Purpose Precision Tool', 349.99, 'images/precission leveling tool.jpeg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="accessory">
+          <img src="images/pool table brush.jpg" alt="Table Brush">
+          <h3>Professional Table Brush</h3>
+          <p>P449.99</p>
+          <button onclick="addToCart('brush-1', 'Professional Table Brush', 449.99, 'images/pool table brush.jpg')" class="cta-button add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2023 Mokel Cue Club Investments. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+   <!-- Your custom JS -->
+   <script src="js/scripts.js"></script>
+
+</body>
+</html>
