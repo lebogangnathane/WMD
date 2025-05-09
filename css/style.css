@@ -800,6 +800,20 @@ body {
     margin-bottom: 20px;
   }
 
+ /* Footer */
+  footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
   /* Checkout Page Styles */
 .checkout-grid {
     display: grid;
