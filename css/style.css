@@ -152,13 +152,19 @@ body {
   }
   
   /* Footer */
-  footer {
+ footer {
+    display: block; /* Ensures it takes full width */
+    width: 100vw; /* Uses viewport width to bypass container constraints */
+    margin-left: calc(-50vw + 50%); /* Counteracts any parent padding/margin */
     background: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-  }
+    box-sizing: border-box;
+    position: relative; /* Needed for width correction */
+    margin-bottom: auto;
+}
   
   footer p {
     margin: 0;
