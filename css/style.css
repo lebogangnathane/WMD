@@ -25,25 +25,25 @@ body {
   #logo {
     max-width: 100px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 40px;
     border-radius: 50%;
   }
   
   .title-motto {
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 0.1;
   }
   
   #title {
     font-size: 2rem;
-    margin: 0;
+    margin: 30px 2;
   }
   
   #motto {
     font-size: 1rem;
     color: #f1c40f;
     font-style: italic;
-    margin: 5px 0 0;
+    margin: 20px 2 0;
   }
   
   /* Navigation Menu */
